@@ -242,6 +242,9 @@ open class ImageSlideshow: UIView {
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
         scrollView.autoresizingMask = autoresizingMask
+        
+        scrollView.transform = CGAffineTransform(scaleX: -1, y: 1)
+        
         if #available(iOS 11.0, *) {
             scrollView.contentInsetAdjustmentBehavior = .never
         }
